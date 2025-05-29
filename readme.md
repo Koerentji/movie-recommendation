@@ -107,21 +107,24 @@ Analisis data eksploratif dilakukan untuk memahami lebih dalam karakteristik dat
 1.  **Distribusi Rating Film**
       * **Deskripsi**: Histogram frekuensi nilai rating pengguna (0.5-5.0).
       * **Visualisasi**:
-        ![Distribusi Rating Pengguna](1.png)
+        ![Distribusi Rating Pengguna](https://github.com/user-attachments/assets/8dd84a49-9dfb-424d-a5cb-732746131a6e)
+
       * **Penjelasan**: Dihasilkan menggunakan `sns.histplot` pada `ratings_df['rating']` untuk menganalisis tren pemberian rating.
       * **Insight**: Rating paling sering adalah **4.0**, diikuti 3.0 dan 5.0. Pengguna cenderung memberi rating tengah ke atas. Distribusi *left-skewed*.
 
 2.  **Distribusi Genre Film (Top 15)**
       * **Deskripsi**: Diagram batang horizontal 15 genre film paling umum.
       * **Visualisasi**:
-        ![15 Genre Film Paling Umum](2.png)
+        ![15 Genre Film Paling Umum](https://github.com/user-attachments/assets/6dac46e4-0b97-40cc-92af-0ebe0fbed950)
+
       * **Penjelasan**: Dibuat dengan menghitung frekuensi setiap genre dari `movies_df` dan ditampilkan dengan `sns.barplot`.
       * **Insight**: Genre dominan adalah **Drama** dan **Comedy**. Lainnya termasuk Thriller, Action, Romance. Relevan untuk Content-Based Filtering.
 
 3.  **Word Cloud Tag Film**
       * **Deskripsi**: Visualisasi *word cloud* tag film, ukuran tag menunjukkan frekuensi.
       * **Visualisasi**:
-        ![Word Cloud dari Tag Film](3.jpg)
+        ![Word Cloud dari Tag Film](https://github.com/user-attachments/assets/aedbaa63-bf1f-4794-a76c-15beab51c04c)
+
       * **Penjelasan**: Dihasilkan dari semua tag menggunakan library `WordCloud`.
       * **Insight**: Menunjukkan tag populer seperti "sci-fi", "atmospheric", "funny", "action". Memberikan dimensi konten tambahan.
 
